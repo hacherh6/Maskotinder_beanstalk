@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>+kotinder</title>
+
+    <!--Recursos gráficos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <style>
+      .btn-light{
+    background-color: blueviolet;
+    color: white;
+    border: 0pt;
+}
+.btn-light:hover{
+    background-color: rgb(107, 26, 182);
+    color: white;
+}
+/*Barra de navegación*/
+#IDnavbar{
+    background: rgba(129,11,145,1);
+    background: -moz-linear-gradient(left, rgba(129,11,145,1) 0%, rgba(255,94,148,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(129,11,145,1)), color-stop(100%, rgba(255,94,148,1)));
+    background: -webkit-linear-gradient(left, rgba(129,11,145,1) 0%, rgba(255,94,148,1) 100%);
+    background: -o-linear-gradient(left, rgba(129,11,145,1) 0%, rgba(255,94,148,1) 100%);
+    background: -ms-linear-gradient(left, rgba(129,11,145,1) 0%, rgba(255,94,148,1) 100%);
+    background: linear-gradient(to right, rgba(129,11,145,1) 0%, rgba(255,94,148,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#810b91', endColorstr='#ff5e94', GradientType=1 );
+}
+
+#grid {
+  display: grid;
+  width: 100%;
+  height: 880px;
+  grid-template-columns: 900px 1fr;
+}
+
+#areaA {
+    align-content: center;
+    text-align: center;
+    background-color: rgb(255, 199, 255);
+}
+
+#areaB {
+  background-color: lightgray;
+}
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+  <body class="pantalla_principal">
+    <!-- Barra de navegación -->
+    <nav id="IDnavbar" class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="principal.html"> <img src="https://maskotinder-rkh.s3.amazonaws.com/imagenes/logo_horizontal.png" alt="+kotinder"></a>
+        <!--BOTON +KOTINDER -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                <!--BOTON PERFIL -->
+                    <a class="nav-link" href="perfil.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Perfil</a>
+                </li>
+                <li class="nav-item">
+                <!--BOTON Favoritos -->
+                    <a class="nav-link" href="favoritos.html"><i class="fa fa-star" aria-hidden="true"></i> Favoritos</a>
+                </li>
+                <li class="nav-item">
+                    <!--BOTON Mensajes -->
+                        <a class="nav-link" href="adopciones.html"> <i class="fa fa-paw" aria-hidden="true"></i> Adopciones</a>
+                    </li>
+                    <!--BOTON Configuración -->
+                    <a class="nav-link" href="Configuración.html"> <i class="fa fa-cog" aria-hidden="true"></i> Configuración</a>
+                </li>
+            </li>
+            <!--BOTON Configuración -->
+            <a class="nav-link" id="boton_logout" href="inicio.html"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Cerrar sesión</a>
+        </li>
+            </ul>
+        </div>
+    </nav>
+  
+    <div id="grid">
+        <div id="areaA">
+            <h2>
+                Quienes Somos 
+            </h2>
+            <p><h4>Somos una empresa que se preocupa por las mascotas que no tienen la misma suerte que las que tienen un hogar, por esta misma razón, decidimos emprender 
+                una idea que vino a la mente de uno de nuestros desarrolladores para así poder ayudar a miles de mascotas que se encuentran en situación de calle y mismas 
+                que se encuentran en un refugio de escasos recursos.</h4></p>
+            <p><h2>Nuestro objetivo</h2></p>
+            <p> </p>
+            <p><h4>Nuestro objetivo es crear una aplicación con la intención de facilitar la manera en que se puede adoptar una mascota, ya que mediante muchos estudios que 
+                realizamos, nos dimos cuenta que la mayoría de la sociedad no tiene idea de donde puede adoptar una mascota rescatada de la calle, habiendo demasiados refugios 
+                de mascotas rescatadas, los cuales no tienen mucho apoyo económico por lo que igual manera se les dificulta mantener a todos las mascotas rescatadas. De esta 
+                manera nos interesó apoyar a las causas que envuelven a todos los afectados en este tema, por eso decidimos lanzar Maskotinder, una aplicación que reconoce a 
+                las personas que rescatan y ponen en adopción a las mascotas para que puedan tener una segunda oportunidad en la vida</h4></p>
+        </div>
+        <div id="areaB">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://maskotinder-rkh.s3.amazonaws.com/imagenes/123768507_4012441345437270_3059944915392860711_n.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://maskotinder-rkh.s3.amazonaws.com/imagenes/30442559_10208708453947631_4097938209621671936_n.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://maskotinder-rkh.s3.amazonaws.com/imagenes/72964526_2463323370369523_1066139139180593152_n.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>        
+        </div>
+    </div>
+
+    <br>
+    <div id="banner" style="text-align: center; color: gray; font-weight: bold; font-size: large; ">
+    </div>
+    <!-- Carta -->
+
+    <!-- Botones dislike, superlike, like -->
+ 
+    <!-- Optional JavaScript -->
+    <script src="principal.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+</body>
+</html>
